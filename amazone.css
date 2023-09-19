@@ -1,0 +1,327 @@
+/* //saari amrgin 0 */
+*{
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+    /*  means jitni bhi padding ek elemrnt komile 
+ya jinta bhi border size elemtn ko mile 
+voh size uske heigh aur widht ke andar count hona chaiye
+uually ke elemtn hota uski height and width  s t karte, jab bhi bordere
+dete , voh heigth width  ke bahar  waale area mei  add hotya
+bt hum chhte hai ki jitni bhi he widh set ki hai uski ke andar 
+border set ho
+agar border badha diya conttent area chota hona chaiye
+padding bad diya toh content area ke andar include honi chaiye
+this is acha tareeka space ko measur ekaren ka
+isko skip bhi karsakte , thosde bahur changes karen hongey bas
+
+isse major changes nahi aayenge
+but it's a good practi e to write wi out code */
+
+
+/* see on amazon webise ehigth of naveba~60px */
+/* //kisis bhi websire ka clone bana ho, toh usko inspect karo */
+/* //inspect karke height and colour dekh sakte */
+.navbar{
+    height:60px;
+    background-color :#0f1111;
+    color:white;
+    /* //background dark toh tet ko hite */
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    /* jutifu content main acces hai left se right tak sare ke saare nt ko sapce karega evenly/ */
+}
+.nav-logo{
+    height:50px;
+width:100px;
+}
+.logo{
+   background-image:url("amazon_logo.png"); 
+   background-size:cover;
+   height:50px;
+   width:100px;
+}
+
+.border{
+    /* //jis jis eelemnt ko scroll karna chate alread ek transparent  */
+ border: 1.5px solid transparent;  
+}
+
+.border:hover{
+    border:1.5px solid white;
+}
+
+/* //next elemtn box-2 in nav bar  deliver to India  */
+/* //deliver to and Indoa ka font size alag alga */
+ 
+/* //b0x2 */
+.add-first{
+ color: #cccccc;
+ font-size:0.85rem;
+ /* //rem mei because , websire resposive bhi bane, width bade toh fontsize bade width ka  toh fontxise kam */
+ margin-left:15px;
+}
+.add-second{
+    font-size:1rem;
+    margin-left:3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/* box3 */
+/* //same line ke liye dispaly flex */
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:pink;
+    width:620px;
+    height:40px;
+    /* //search bar thoda sa curve haoi */
+    border-radius: 4px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width:50px;
+    text-align:center;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+}
+.search-input{
+ width:100%;   
+ font-size:1rem;
+ border:none;
+
+}
+.search-icon{
+   width:45px;
+   display:flex; 
+   justify-content: center; 
+   /* //jhorizontally center mei; */
+   /* //ab vertically center ke lkiye */
+   align-items:center;
+   /* //kita kaam aa raha flexbox layout, center karna , rght karna, center karna */
+font-size:2rem;
+/* background-color:rgb(255, 174,0);//try and select */
+background-color:#febd68;
+border-top-left-radius:4px;
+border-bottom-right-radius:4px;
+color:#0f1111;
+}
+
+.nav-search:hover{
+    border:2px solid orange;
+}
+/* box4 */
+/* //this boc has twewo lines / */
+span{
+    font-size:0.7rem;
+}
+.nav-second{
+    font-size:0.85rem;
+    /* //font weight means darker bold */
+  font-weight:700;
+
+}
+/* //last box cart */
+/* box-6 */
+.nav-cart i{
+    /* //selectors
+    abhi tak universal selectors aata tha , id eector , cass selector, etc etc*/
+/* can also use selector ka combination */
+font-size:31px;
+}
+.nav-cart{
+    font-size:0.85rem;
+    font-weight:700;
+}
+
+
+/* //ist linenav over 
+2nd horizontal line pabel start now
+/2nd horizomtal line */
+/* panel */
+.panel{
+    height:40px;
+    background-color:#222f3d;
+    /* inn saari cheezo ko ek line mei horizontally
+    //then main container ko flex bana do 
+    //saare items by defaul row ke form arrane ho jaayengey
+    //hamara main conatiner is panel */
+display:flex;
+color:white;
+/* //verically aline karte center mei laate */
+align-items:center;
+/* //horixontally align karne e liye */
+justify-content:space-evenly;
+}
+
+.panel-ops p{
+    /* //jitne bhi paragraph panel ops ke paragraph tags ko inline mei display karna hai */
+  display:inline;
+  margin-left:15px;
+}
+.panel-ops{
+    width:70%;
+    font-size:0.85rem;
+}
+.panel-deals{
+font-size:0.9rem;
+font-weight:700;
+}
+/* //header is ready, nav-bar bhi ready, panl bhi ready can move to hero ection now */
+
+
+
+/* herosection */
+.hero-section{
+    background-image:url("hero_image.jpg");
+    /* image dikhayi nahi degi bcs herosection ko heoigth and width nahi di */
+   background-size:cover;
+   height:400px;
+   display:flex;
+   justify-content:center;
+   align-items:flex-end;
+   /* //ekdum end par aagya message */
+   }
+
+
+
+   .hero-message{
+    background-color:white;
+    color:text;
+    height:40px;
+    /* content ko center mei leaana: */
+display:flex;
+/* vertially center me i laane ke kliye */
+   align-items :center;
+justify-content :center;
+font-size:0.85rem;
+/* bottom:25px;
+position:relative; */
+width:80%;
+margin-bottom:25px;
+
+}
+/* //hero message ko neeche bottom mei plaxe karna */
+.hero-message a{
+    color:#007185;
+}
+/* //heris section done */
+
+
+
+/* shop-section */
+.shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    /* //ab 8 ke jagah 4 boxes ek line mei */
+    /* beech mei box ke and size mei bhi space chaiye andeven space haiye */
+justify-content: space-evenly;
+background-color:#e2e7e6;
+}
+.box{
+border:2px solid black;
+height:400px;
+/* width:25%;//pura anhi use karna , thoda spae chiaye */
+width:24%;
+background-color:white;
+padding:20px 0px 15px;
+margin-top:15px;
+}
+
+/* //ham ek line mei 4 bwhire boxes deikhana chah rahe */
+/* //4baxo ko same line mei laana hai */
+
+
+.box-img{
+    height:300px;
+    /* box ko hight di ahi 400px so atlest 300 psxdeni imgko */
+  /* //to stop repating this of image */
+  background-size:cover;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.box-content{
+    margin-left:1rem;
+    margin-right:1rem;
+
+    /* 1rem is16px */
+}
+.box content p{
+    color:#007185;
+}
+
+
+
+/* footer */
+ footer{ 
+    margin-top:15px;
+}
+.foot-panel1{
+   background-color:#37475a;
+    color:white;
+    
+    height:50px;
+    /* //saari cheeze ko centere karne ke liye: */
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.85rem; 
+}
+
+.foot-panel2{
+    background-color:#222f3d;
+    color:white;
+    height:300px;
+    display:flex;
+    justify-content:space-evenly;
+}
+/* sare ke saare in single line by doinf content block */
+ul{
+   margin-top: 20px;
+}
+ul a{
+    display:block;
+    font-size:0.85 rem;
+    margin-top:10px;
+    color:#dddddd;
+}
+/* ///jab bhi sab songle row mei then parent  */
+/* container ko display flex kasakte yahan parent contianer is foor panel2 */
+.foot-panel3{
+    background-color:#222f3d;
+    border-top:0.5px solid white; 
+    height:68px;
+}
+.logo{
+   background-image:url("amazon_logo.png"); 
+   background-size:cover;
+   height:50px;
+   width:100px;
+   /* //logo ko center karane ke liye */
+   /* //vertically cnter */
+   /* align-items:center; */
+   
+}
+.foot-panel4{
+    background-color:#0f1111;
+    color:white;
+    height:80px;
+    font-size:0.7rem;
+    text-align:center;
+    /* display:flex;
+    justify-content:center;
+      align-items:center; */
+}
+.pages{
+padding-top: 25px;
+}
+
+.copy-right{
+    padding-top: 5px;
+}
